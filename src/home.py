@@ -15,7 +15,7 @@ def comp_turn():
     ret_move = 0
     possible_moves = [x for x in range(1, 10) if board[x] == " "]
     if len(possible_moves) > 0:
-        for letter in ["x", "O"]:
+        for letter in ["O", "X"]:
             for pos_move in possible_moves:
                 board_copy = board[:]
                 board_copy[pos_move] = letter
